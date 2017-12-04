@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'tox'
+        sh 'python -c "import sys; print(sys.path)"'
       }
     }
   }
